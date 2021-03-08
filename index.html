@@ -6,10 +6,39 @@
     <title>Mitt brädspel</title>
     <link rel="stylesheet" href="css\style.css">
     <script src="js/main.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <a href="index.html"><h1>Minesweeper</h1></a>
+    <nav>
+        <a href="https://www.techradar.com/news/gaming/the-most-successful-game-ever-a-history-of-minesweeper-596504"><h3>Minesweepers historia</h3></a>
+    </nav>
+</header>
 
-    <div class="grid"></div>
-    
+    <main>
+    <div class="container">
+        <div class="grid"></div>
+        <div>Flaggor kvar: <span id="flags-left"></span></div>
+        <div class="choose-difficulty">
+            <button id="lätt">Lätt</button>
+            <button id="svår">Svår</button>
+        </div>
+        <div id="result"></div>
+      </div>
+      <div>
+          <article>
+              <h4>Hur man spelar</h4>
+              <p>
+                  Vänsterclicka för att kolla ifall en ruta har en bomb på sig. Har rutan en bomb så förlorar du. Siffran i rutan representerar antalet bomber nära rutan. Du vinner genom att sätta en flagga (höger clicka) på alla bomber.
+              </p>
+          </article>
+      </div>
+    </main>
+<footer>
+    <p>
+        Copyright Reble 2021
+    </p>
+</footer>
 </body>
 </html>
